@@ -50,9 +50,14 @@ aspoň jednu podmínku if a funkci print(). Dodržte správné odsazování kód
 Do konzole vypište nejprve docstring vaší funkce a potom zavolejte funkci samotnou.   
 """
 
-def funkce():
+def funkce(x):
+    """
+    Tahle funkce vypise 5x "i je vetsi nez 5" a 5x "opice"
+    """
     for i in range(1, 10):
         if i > 5:
             print("i je vetsi nez 5")
+            print(x)
 
-funkce()
+print(funkce.__doc__)
+funkce("opice")
